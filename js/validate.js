@@ -22,7 +22,7 @@
                 'layer': true,
                 'scope': "form",//范围
                 'trigger':{"dom":"form",'event-dom':"*[type='submit']",'event':'click'},//触发事件
-                'layer-config':{'event':'msg','config':{}},//layer插件config
+                'layer-config':{'event':'msg','config':"''"},//layer插件config
                 'message':message_config,//信息初始化,
                 set_message_config:{},
                 set_message_obj:{},//json类型数据根据css选择器修改错误提示

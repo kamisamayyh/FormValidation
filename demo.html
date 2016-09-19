@@ -23,7 +23,6 @@
         <input type="text" remote="test.txt" placeholder="ajax校验" >
         <button id="button"  type="button">3513561356</button>
     </form>
-
 </body>
 <script src="lib/jquery-2.1.4.js"></script>
 <script src="lib/layer/2.1/layer.js"></script>
@@ -58,17 +57,16 @@
         },
         set_message_obj:{
             required:{'message-text':'test success','target':'#test'}
-
         },
         success_function:function(){
             console.log('success');
-
         },
         error_function:function(dom){
 
         },
         'trigger':{'event-dom':'#button','event':'blur','dom':'form'},
-        'layer-config':{'event':'tips','config':"'#button',{tips:[1,'#FA6D8']}"},
+        'layer-config':{'event':'msg','config':"{icon: 2}"},
+//        'layer-config':{'event':'tips','config':"'#button',{tips:[1,'#FA6D8']}"},
         'set_message_config':test
     });
 
